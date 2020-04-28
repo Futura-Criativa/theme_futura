@@ -1,2 +1,2 @@
-# theme_futura
+# Futura
 Tema filho Moove para Moodle
