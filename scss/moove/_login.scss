@@ -1,0 +1,340 @@
+
+#page-login-index.moove-login {
+    background-color: #ffffff;    
+    margin-left: 0;
+
+    #page-wrapper {
+        padding-bottom: 0;
+
+        #page {
+            margin-top: 0;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        &::after {
+            min-height: 0;
+        }
+    }
+   
+    #region-main{
+        height: 100%;
+        padding: auto;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        img {
+            max-height: 90px;
+            margin-top: auto;
+        }
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .instructionspanel {
+        border-radius: $m-login-padding;
+        border: none;
+    }
+
+    .loginpanel {
+        border-radius: 25px;
+        border: none;
+        width: 300px;
+        margin: auto;
+        background-color: #ffffff;
+
+        .card-block {
+            padding: 0;
+            width: 300px;
+
+            .form {
+                padding: 20px 15px;
+                //height: $m-login-boxheight;
+                //max-height: $m-login-boxheight;
+                height: 100%;
+                max-height: 225px;
+                width: 300px;
+                margin: auto;
+                position: relative;
+
+                .welcome {
+                    font-size: 1.2rem;
+                }
+
+                .m-t-1 {
+                    text-align: center;
+                }
+
+                .input-group-addon {
+                    width: 40px;
+                    line-height: 30px;
+                    padding: 4px 10px;
+                    margin-bottom: 18px;
+                    font-size: 1rem;
+                    text-align: center;
+                    background-color: transparent;
+                    border: 1px solid rgba(0,0,0,.15);
+                    border-radius: 100px; 
+                                   
+                }
+
+                .input-group-username .input-group-addon {                    
+                   margin-right: 10px;
+                }
+                .input-group-password .input-group-addon {    
+                    margin-right: 10px;
+                }
+
+                .input-group-mostrar {
+                    width: 40px;
+                    line-height: 30px;
+                    padding: 4px 10px;
+                    margin-bottom: 18px;
+                    font-size: 1rem;
+                    text-align: center;
+                    background-color: transparent;
+                    border: 1px solid rgba(0,0,0,.15);
+                    border-left: none;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                }
+
+                .fa-eye:before {
+                    color: rgba(0, 0, 0, 0.274);
+                }
+
+                .fa-eye:focus {
+                    border-color: none !important;
+                    outline:none !important;
+                }
+
+                textarea:focus,
+                input:focus,
+                select:focus {
+                     border-color: none !important;
+                     outline: 0;
+                     //-webkit-box-shadow: none !important;
+                      box-shadow: none !important;
+                }
+
+                #username,
+                #password {                    
+                    border: 1px solid rgba(0, 0, 0, .15);
+                    background-color:transparent;
+                    height: 40px;
+                    margin-bottom: 15px;
+                    border-top-left-radius: 25px;
+                    border-bottom-left-radius: 25px;
+                }                           
+
+                #username {  
+                    border-top-right-radius: 25px;
+                    border-bottom-right-radius: 25px;                 
+                    margin-bottom: 0;
+                }
+                #password {  
+                    border-right: none;                             
+                    border-top-right-radius: none;
+                    border-bottom-right-radius: none;
+                    margin-bottom: 0;
+                }
+                #loginbtn {
+                   // background-color: #0d5ca2;
+                    color: #fff;                    
+                    border-radius: 25px; 
+                    padding: 0.5rem;
+                    border: 1px solid rgba(0, 0, 0, .15);  
+                    background: linear-gradient(218deg, #2046e3, #9d20e3, #dfdb2c, #0e9f53);
+                    background-size: 800% 800%;
+                    
+                    -webkit-animation: AnimationName 19s ease infinite;
+                    -moz-animation: AnimationName 19s ease infinite;
+                    -o-animation: AnimationName 19s ease infinite;
+                    animation: AnimationName 19s ease infinite;
+                    
+                    @-webkit-keyframes AnimationName {
+                        0%{background-position:0% 51%}
+                        50%{background-position:100% 50%}
+                        100%{background-position:0% 51%}
+                    }
+                    @-moz-keyframes AnimationName {
+                        0%{background-position:0% 51%}
+                        50%{background-position:100% 50%}
+                        100%{background-position:0% 51%}
+                    }
+                    @-o-keyframes AnimationName {
+                        0%{background-position:0% 51%}
+                        50%{background-position:100% 50%}
+                        100%{background-position:0% 51%}
+                    }
+                    @keyframes AnimationName {
+                        0%{background-position:0% 51%}
+                        50%{background-position:100% 50%}
+                        100%{background-position:0% 51%}
+                    }    
+                }
+
+                
+                .forgetpass {
+                    font-size: 12px;
+                    text-align: center;
+                    //padding-bottom: 70%;
+                }
+
+                .social {
+                    text-align: center;
+                    font-size: 12px;
+                    height: 50px;
+                    width: 270px;                  
+                }
+
+                .site-footer, .page-wrap:after {
+                    position: fixed;
+                    width: 100%;
+                    left: 0;
+                    top: 90%;
+                    height: 10%;
+                    background-color: transparent;
+                  }
+
+                .icons {
+                    padding: 10px;
+                    font-size: 20px;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    text-decoration: none;
+                    margin: 5px 5px;
+                    border-radius: 50%;
+                    position: relative;
+                    top: 0;
+                  }
+
+                .icons:hover{
+                    top:-5px;
+                    box-shadow:0 4px 4px #999;
+                    transition: all .2s ease-in-out;
+                }
+                
+                .fa-facebook {
+                  background: #3B5998;
+                  color: white;
+
+                }
+
+                .fa-linkedin {
+                    background: #007bb5;
+                    color: white;
+                  }
+                  
+                  .fa-youtube {
+                    background: #bb0000;
+                    color: white;
+                  }
+                  
+                  .fa-instagram {
+                    background: #c32aa3;
+                    color: white;
+                  }
+                
+
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover,
+                input:-webkit-autofill:focus,
+                input:-webkit-autofill:active {
+                    transition: background-color 5000s ease-in-out 0s;
+                    -webkit-box-shadow: 0 0 0px 1000px rgba(240, 238, 238, 0) inset;
+                }
+
+                .cookie {
+                    font-size: 12px;
+                }
+            }
+
+            .instructions {
+                background-color: $brand-primary;
+                padding: 60px 15px;
+                color: #fff;
+                min-height: $m-login-boxheight;
+
+                img {
+                    max-width: 100%;
+                }
+
+                .text-info {
+                    color: #fff !important;
+                    text-align: right;
+                }
+
+                h2,
+                h3 {
+                    color: #fff;
+                }
+
+                hr {
+                    width: 50%;
+                    margin-top: 0;
+                    border-top: 1px solid rgba(255, 255, 255, .7);
+                }
+
+                .m-t-2 {
+                    margin-top: 1rem !important;
+                }
+
+                .btn-secondary {
+                    border: none;
+                }               
+                
+            }
+        }
+
+        
+    }
+
+    .box.generalbox.boxaligncenter {
+        border-color: $card-border-color;
+        border-radius: $card-border-radius;
+        -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        background-color: #fff;
+        padding: 2rem !important;
+    }
+}
+
+#page-login-signup {
+    margin-left: 0;
+    #page-wrapper {
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        &:after {
+            min-height: 0;
+        }
+
+        #page {
+            margin-top: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.potentialidplist .potentialidp {
+    margin-bottom: 5px;
+}
+
+#page-login-signup,
+#page-login-index.moove-login {
+    .plugins_standard_footer_html {
+        display: none;
+    }
+
+}
